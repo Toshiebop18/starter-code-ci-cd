@@ -3,12 +3,15 @@ import db from '../config/connection.js';
 
 export default async (modelName: "Question", collectionName: string) => {
   try {
-    let modelExists = await models[modelName].db.db.listCollections({
-      name: collectionName
-    }).toArray()
+    // Check if the model exists and has the necessary properties
+    if (models[modelName]?.db?.db) {
+      let modelExists = await models[modelName].db.db.listCollections({
+        name: collectionName
+      }).toArray();
 
-    if (modelExists.length) {
-      await db.dropCollection(collectionName);
+      if (modelExists && modelExists.length) {
+        await db.dropCollection(collectionName);
+      }
     }
   } catch (err) {
     throw err;
