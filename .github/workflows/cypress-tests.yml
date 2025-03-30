@@ -4,8 +4,6 @@ name: Cypress Tests
 on:
   pull_request:
     branches: [ develop ]
-  # Also allow manual triggering for testing
-  workflow_dispatch:
 
 jobs:
   test:
@@ -16,7 +14,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Using a more stable Node version
+          node-version: '22' # Specify the Node.js version
           cache: 'npm'
           
       - name: Install dependencies
