@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - main
+  # Also allow manual triggering for testing
+  workflow_dispatch:
 
 jobs:
   deploy:

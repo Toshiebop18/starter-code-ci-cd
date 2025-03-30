@@ -4,6 +4,8 @@ name: Cypress Tests
 on:
   pull_request:
     branches: [ develop ]
+  # Also allow manual triggering for testing
+  workflow_dispatch:
 
 jobs:
   test:
