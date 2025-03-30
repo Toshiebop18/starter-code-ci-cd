@@ -46,6 +46,7 @@ The application is a coding quiz platform that:
 ├── cypress/                # Cypress test files
 │   ├── component/          # Component tests
 │   └── fixtures/           # Test data
+├── .github/workflows/      # GitHub Actions workflow definitions
 ```
 
 ## Getting Started
@@ -81,13 +82,13 @@ This project uses Cypress for both component and end-to-end testing.
 ### Running Component Tests
 
 ```bash
-npm run cypress:component
+npm run test-component
 ```
 
 ### Running E2E Tests
 
 ```bash
-npm run cypress:open
+npm run test-gui
 ```
 
 ### Test Structure
