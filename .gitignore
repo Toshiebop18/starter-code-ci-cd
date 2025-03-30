@@ -1,0 +1,14 @@
+node_modules
+dist
+coverage
+.vscode
+*.log
+*.env
+*.tsbuildinfo
+*.tgz
+*.zip
+*.tar
+
+
+# Ignore all files in the dist directory
+# except for the .gitkeep file
