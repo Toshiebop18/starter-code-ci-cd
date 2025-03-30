@@ -8,7 +8,8 @@ coverage
 *.tgz
 *.zip
 *.tar
-
+package-lock.json
+.DS_Store
 
 # Ignore all files in the dist directory
 # except for the .gitkeep file
