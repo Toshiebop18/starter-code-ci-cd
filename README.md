@@ -11,14 +11,6 @@ The application is a coding quiz platform that:
 - Demonstrates good testing practices with Cypress
 
 ## Technology Stack
-
-### Frontend
-- React
-- TypeScript
-- Vite
-- CSS for styling
-
-### Backend
 - Node.js
 - Express
 - TypeScript
